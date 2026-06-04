@@ -61,10 +61,8 @@ jobs:
       - name: Build Markdown
         uses: dita-ot/dita-ot-action@4.4
         with:
-          plugins: |
-            org.lwdita
-          build: |
-            dita -i dita/document.ditamap -o out/markdown -f markdown
+          plugins: org.lwdita
+          build: dita -i dita/document.ditamap -o out/markdown -f markdown
 
       # ── 3. Upload the Markdown files as a downloadable workflow artifact ───
       #
