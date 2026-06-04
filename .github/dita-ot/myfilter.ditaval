@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Sample DITAVal filter file
+  ──────────────────────────
+  Use this file to include or exclude content based on profiling attributes
+  applied to DITA elements (e.g., audience, platform, product, otherprops).
+
+  HOW TO USE
+  1. Edit the <prop> elements below to match the attributes in your DITA topics.
+  2. In ci.yml, uncomment the --filter flag and point it to this file:
+
+       dita -i dita/document.ditamap \
+            -o out/markdown \
+            -f markdown \
+            --filter=.github/dita-ot/myfilter.ditaval
+
+  ACTIONS
+  - include  : always include this content (default if no rule matches)
+  - exclude  : strip this content from the output
+  - flag     : mark the content (adds a label; not commonly used for Markdown)
+
+  EXAMPLES
+  The rules below exclude content marked for an "expert" audience and include
+  content marked for a "novice" audience.  Adjust or add <prop> elements as
+  needed for your document set.
+-->
+<val>
+
+  <!-- Audience filtering -->
+  <prop att="audience" val="expert"  action="exclude"/>
+  <prop att="audience" val="novice"  action="include"/>
+
+  <!-- Platform filtering (uncomment and edit as needed)
+  <prop att="platform" val="windows" action="include"/>
+  <prop att="platform" val="linux"   action="exclude"/>
+  -->
+
+  <!-- Product filtering (uncomment and edit as needed)
+  <prop att="product" val="pro"   action="include"/>
+  <prop att="product" val="basic" action="exclude"/>
+  -->
+
+</val>
