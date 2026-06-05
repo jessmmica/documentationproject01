@@ -64,8 +64,6 @@ jobs:
       - name: Build Markdown
         uses: dita-ot/dita-ot-action@4.4
         with:
-          plugins: |
-            org.lwdita
           transtype: markdown
           input: dita/document.ditamap
           output-path: out/markdown
