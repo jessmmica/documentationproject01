@@ -8,6 +8,9 @@ on:
       - master
   workflow_dispatch:
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true" 
+
 jobs:
   build-dita:
     name: Build DITA
@@ -63,8 +66,10 @@ jobs:
         with:
           plugins: |
             org.lwdita
-          build: |
-            dita -i dita/document.ditamap -o out/markdown -f markdown
+          transtype: markdown
+          input: dita/document.ditamap
+          output-path: out/markdown
+      
 
       # ── 3. Upload the Markdown files as a downloadable workflow artifact ───
       #
