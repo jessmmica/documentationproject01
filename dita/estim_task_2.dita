@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task-3910" class="- topic/topic task/task ">
+    <title class="- topic/title ">How do I set up Premod?</title>
+    <shortdesc class="- topic/shortdesc ">How to configure a bipolar, two-electrode Premod treatment sequence for targeted, small surface muscle or nerve stimulation.</shortdesc>
+    <taskbody class="- topic/body task/taskbody ">
+        <context class="- topic/section task/context ">This procedure is used when a patient requires localized pain relief or targeted muscle stimulation in a narrow, restricted, or small anatomical area. You will perform this task instead of an IFC setup when treating smaller joints and limbs—such as the wrist, ankle, fingers, or forearm muscle—where a four-electrode quadripolar pattern cannot physically fit on the skin.</context>
+        <steps class="- topic/ol task/steps ">
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Place the two electrodes directly over the target muscle  or on either side of the isolated joint space.</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Plug both electrode lead wires into a single output port on the machine (e.g., Channel 1 only).</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">
+                    On the display home menu, select
+                    <b class="+ topic/ph hi-d/b ">Electrotherapy</b>
+                    .
+                </cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">
+                    Then, select
+                    <b class="+ topic/ph hi-d/b ">Premod</b>
+                    .
+                </cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">
+                    Select
+                    <b class="+ topic/ph hi-d/b ">Treatment Time</b>
+                    and use console arrow keys to achieve the desired time.
+                </cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">
+                    Press
+                    <b class="+ topic/ph hi-d/b ">
+                        <mathml class="+ topic/foreign mathml-d/mathml ">
+                            <m:math xmlns:m="http://www.w3.org/1998/Math/MathML">
+                                <m:mo>←</m:mo>
+                            </m:math>
+                        </mathml>
+                    </b>
+                    to finalize time.
+                </cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Slowly rotate the main intensity dial clockwise. Instruct the patient to inform you when they feel a strong, comfortable "tingling."</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">
+                    Press
+                    <b class="+ topic/ph hi-d/b ">START</b>
+                    .
+                </cmd>
+            </step>
+        </steps>
+        <result class="- topic/section task/result ">The active channel indicator will show a steady output stream on the console. The patient will report a localized, rhythmic tingling sensation targeted along the line between the two specific pads. Depending on your chosen frequency, you will observe mild, rhythmic, visible muscle twitching or complete sensory numbness in that isolated muscle zone.</result>
+    </taskbody>
+</task>

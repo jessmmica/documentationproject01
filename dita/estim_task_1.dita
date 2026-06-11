@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task-3256" class="- topic/topic task/task ">
+    <title class="- topic/title ">How do I set up IFC?</title>
+    <shortdesc class="- topic/shortdesc ">How to position electrodes in a quadripolar pattern and configure parameters for a deep tissue IFC treatment session.</shortdesc>
+    <taskbody class="- topic/body task/taskbody ">
+        <context class="- topic/section task/context ">This procedure is performed when a patient requires deep tissue pain relief or localized swelling reduction for large, deep structures like the lower back, quadriceps, or shoulder. Because IFC requires an internal crossing pattern to create its therapeutic effect, this task must be used exclusively when there is enough physical surface area on the skin to comfortably position a four-electrode grid.</context>
+        <steps class="- topic/ol task/steps ">
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Place the four electrodes on the skin surrounding the center of the pain site so they form a square or "X" pattern. </cmd>
+                <stepresult class="- topic/itemgroup task/stepresult ">
+                    <image href="Images/Screenshot_2026-06-04_000115.png" class="- topic/image "/>
+                </stepresult>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">
+                    Plug the lead wires into the Channel 1 and Channel 2
+                    <?ezd-review-start 771715c7-7e48-421d-a187-09f4d5be49c7:comment:jippatel@ucdavis.edu:1779215199702?>
+                    <?ezd-review-end 771715c7-7e48-421d-a187-09f4d5be49c7?>
+                    .
+                </cmd>
+                <info class="- topic/itemgroup task/info ">
+                    <note class="- topic/note ">For this example, Channel 1 and Channel 2 will be used. Any available channels can be used.</note>
+                    <image href="Images/channel1andchannel2.png" class="- topic/image "/>
+                </info>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Connect Channel 1 leads to one diagonal pair of pads.</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Connect Channel 2 leads to the opposite diagonal pair of pads.</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">
+                    On the display home menu, select
+                    <b class="+ topic/ph hi-d/b ">Electrotherapy</b>
+                    .
+                </cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">
+                    Then, select
+                    <b class="+ topic/ph hi-d/b ">Interferential</b>
+                    .
+                </cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">
+                    To adjust the treatment time, select
+                    <b class="+ topic/ph hi-d/b ">Edit</b>
+                    .
+                </cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">
+                    Select
+                    <b class="+ topic/ph hi-d/b ">Treatment Time</b>
+                    and use console arrow keys to achieve the desired time.
+                </cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">
+                    Press
+                    <b class="+ topic/ph hi-d/b ">
+                        <mathml class="+ topic/foreign mathml-d/mathml ">
+                            <m:math xmlns:m="http://www.w3.org/1998/Math/MathML">
+                                <m:mo>←</m:mo>
+                            </m:math>
+                        </mathml>
+                    </b>
+                    to exit.
+                </cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">
+                    Slowly rotate the main intensity dial clockwise. I
+                    <?ezd-review-start e34db9bb-a2e8-4376-a9d6-66e7a1a0e77d:comment:jippatel@ucdavis.edu:1779215252112?>
+                    nstruc
+                    <?ezd-review-end e34db9bb-a2e8-4376-a9d6-66e7a1a0e77d?>
+                    t the patient to inform you when they feel a strong, comfortable "tingling."
+                </cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">
+                    Press
+                    <b class="+ topic/ph hi-d/b ">START</b>
+                    .
+                </cmd>
+            </step>
+        </steps>
+        <result class="- topic/section task/result ">The countdown timer will begin ticking backward on the screen, and the patient will report a smooth, diffuse, sweeping "tingling" sensation that covers the entire square grid between the four electrodes. The patient should not experience any sharp localized stinging.</result>
+    </taskbody>
+    <related-links class="- topic/related-links ">
+        <link href="estim_concept_1.dita" class="- topic/link "/>
+    </related-links>
+</task>

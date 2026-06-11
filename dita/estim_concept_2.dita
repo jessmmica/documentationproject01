@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept-7819" xml:lang="en-us" class="- topic/topic concept/concept ">
+    <title class="- topic/title ">
+        What is
+        <?ezd-review-start fa0c8014-2f4a-4ac4-9e0f-4afa6e62dacd:comment:jippatel@ucdavis.edu:1779215337507?>
+        Premod
+        <?ezd-review-end fa0c8014-2f4a-4ac4-9e0f-4afa6e62dacd?>
+        ?
+    </title>
+    <shortdesc class="- topic/shortdesc ">
+        <?ezd-review-start 41672287-5f35-400e-8324-38da3adcacca:comment:sglindain@ucdavis.edu:1779215640187?>
+        A definition of Premodulated (Premod) current, its internal electronic mixing mechanism, and its clinical advantages for small, isolated treatment zones.
+        <?ezd-review-end 41672287-5f35-400e-8324-38da3adcacca?>
+    </shortdesc>
+    <prolog class="- topic/prolog ">
+        <author translate="no" type="creator" class="- topic/author ">Jessica Chin &lt;jachin@ucdavis.edu&gt;</author>
+        <metadata class="- topic/metadata ">
+            <keywords class="- topic/keywords "/>
+        </metadata>
+    </prolog>
+    <conbody class="- topic/body  concept/conbody ">
+        <section class="- topic/section ">
+            <title class="- topic/title ">Clinical Context</title>
+            <p class="- topic/p ">Premodulated (Premod) therapy is a bipolar electrical stimulation modality designed to treat narrow or isolated areas of the body where placing four electrodes is impossible. Like IFC, Premod is used for pain management and muscle relaxation. </p>
+        </section>
+        <section class="- topic/section ">
+            <title class="- topic/title ">How it works: Pre-Mixed Current</title>
+            <p class="- topic/p ">Premod mixes the frequencies inside the device before being applied to the patient. The machine blends a medium-frequency with a lower modulating frequency to create a single current through a single channel consisting of two electrodes. Since the current is pre-mixed, it does not rely on a geometric intersection to function. Requiring only a single channel and two pads, it is useful for targeting small joints, isolated muscle groups, and sensory nerves for localized pain reduction.</p>
+        </section>
+    </conbody>
+</concept>

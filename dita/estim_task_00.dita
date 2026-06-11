@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task-4996" class="- topic/topic task/task ">
+    <title class="- topic/title ">How do I select or modify channels?</title>
+    <shortdesc class="- topic/shortdesc ">How to toggle between channels to adjust independent treatment zones. </shortdesc>
+    <taskbody class="- topic/body task/taskbody ">
+        <prereq class="- topic/section task/prereq ">
+            <ul class="- topic/ul ">
+                <li class="- topic/li ">The device must be on and resting on the home menu.</li>
+                <li class="- topic/li ">Lead wires must be plugged into the target channel ports. </li>
+            </ul>
+        </prereq>
+        <context class="- topic/section task/context ">Multi-modality therapy units allow clinicans to treat multiple areas or multiple patients at the same time using different output channels. Modifying specific channels allows you to adjust parameters for one targeted muscle group or joint without disrupting active treatments running on other channels. </context>
+        <steps class="- topic/ol task/steps ">
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Identify "Select Channel" on display screen and the physical button bordering it.</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Press that physical button bordering the screen interface to select a channel. </cmd>
+                <info class="- topic/itemgroup task/info ">
+                    <note class="- topic/note ">Pressing the physical button will change the channels. Keep pressing until the desired channel is outlined. </note>
+                </info>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Select electrical stimulation therapy to conduct the modality. </cmd>
+            </step>
+        </steps>
+        <result class="- topic/section task/result ">The selected channel will appear outlined on the console, and now you can adjust the treatment for that specific channel. </result>
+    </taskbody>
+    <related-links class="- topic/related-links ">
+        <link href="estim_task_1.dita" class="- topic/link "/>
+        <link href="estim_task_2.dita" class="- topic/link "/>
+        <link href="estim_task_3.dita" class="- topic/link "/>
+    </related-links>
+</task>

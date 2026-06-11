@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task-3354" class="- topic/topic task/task ">
+    <title class="- topic/title ">How do I  set up Combo?</title>
+    <shortdesc class="- topic/shortdesc ">How to connect and calibrate the device to deliver simultaneous ultrasound and premodulated electrical stimulation. </shortdesc>
+    <taskbody class="- topic/body task/taskbody ">
+        <prereq class="- topic/section task/prereq ">
+            <ul class="- topic/ul ">
+                <li class="- topic/li ">Obtain one adhesive electrode pad and a bottle of ultrasound gel.</li>
+                <li class="- topic/li ">Ensure ultrasound transducer wand is available. </li>
+            </ul>
+        </prereq>
+        <context class="- topic/section task/context ">This procedure combines ultrasound waves with electrical stimulation through a single circuit. You will perform this task to treat irritable trigger points, scar tissue, or muscle spasms.</context>
+        <steps class="- topic/ol task/steps ">
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Connect the ultrasound transducer. </cmd>
+                <info class="- topic/itemgroup task/info ">
+                    Plug the ultrasound transducer wand into the dedicated ultrasound port. Place one electrode on the athlete's skin adjacent to the treatment area to complete the electrical circuit.
+                    <image href="Images/ultrasoundportfinal.png" class="- topic/image "/>
+                </info>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Place the electrode on the athlete's skin.</cmd>
+                <info class="- topic/itemgroup task/info ">Place the electrode on the skin adjacent to the treatment area and connect the Black Lead Wire from Channel 2 to the electrode to complete the circuit. </info>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">
+                    <image href="Images/channel2final.png" class="- topic/image "/>
+                    On the display home menu, select
+                    <b class="+ topic/ph hi-d/b ">Combo</b>
+                    .
+                </cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">
+                    Select
+                    <b class="+ topic/ph hi-d/b ">Treatment Time</b>
+                    and use console arrow keys to achieve the desired time.
+                </cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">
+                    Press
+                    <b class="+ topic/ph hi-d/b ">
+                        <mathml class="+ topic/foreign mathml-d/mathml ">
+                            <m:math xmlns:m="http://www.w3.org/1998/Math/MathML">
+                                <m:mo>←</m:mo>
+                            </m:math>
+                        </mathml>
+                    </b>
+                    to finalize time.
+                </cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Apply ultrasound gel.</cmd>
+                <info class="- topic/itemgroup task/info ">
+                    Apply a liberal layer of ultrasound gel to the treatment area and place the ultrasound wand on the treatment area.
+                    <note class="- topic/note ">
+                        Ultrasound head
+                        <b class="+ topic/ph hi-d/b ">MUST</b>
+                        maintain contact with skin to prevent damage to the head. Keep the soundhead flat against the skin for the remaining steps.
+                    </note>
+                </info>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Set the ultrasound frequency.</cmd>
+                <info class="- topic/itemgroup task/info ">
+                    Slowly rotate the main intensity dial clockwise to
+                    <b class="+ topic/ph hi-d/b ">1.2 W/cm2</b>
+                    .
+                </info>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">
+                    Select
+                    <b class="+ topic/ph hi-d/b ">Edit Stim</b>
+                    .
+                </cmd>
+                <info class="- topic/itemgroup task/info ">Slowly rotate the main intensity dial clockwise. You will look for muscle twitching in the treatment area.</info>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">
+                    Once the muscle is twitching, press
+                    <b class="+ topic/ph hi-d/b ">START</b>
+                    .
+                    <b class="+ topic/ph hi-d/b ">Keep the soundhead  moving constantly in smooth, small circles</b>
+                    .
+                </cmd>
+            </step>
+        </steps>
+        <result class="- topic/section task/result ">The ultrasound timer and e-stim channel will run simultaneously on the console. </result>
+    </taskbody>
+    <related-links class="- topic/related-links ">
+        <link href="estim_concept_3.dita" class="- topic/link "/>
+    </related-links>
+</task>

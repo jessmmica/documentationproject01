@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task-4628" class="- topic/topic task/task ">
+    <title class="- topic/title ">How do I  turn on E-stim?</title>
+    <shortdesc class="- topic/shortdesc ">How to turn on the E-stim machine to conduct clinical electrical stimulation therapy. </shortdesc>
+    <taskbody class="- topic/body task/taskbody ">
+        <prereq class="- topic/section task/prereq ">
+            <ul class="- topic/ul ">
+                <li class="- topic/li ">Inspect the power cord for any fraying or exposed wires.</li>
+                <li class="- topic/li ">Ensure the power cable is connected to the wall outlet.</li>
+                <li class="- topic/li ">Verify that no electrodes are currently attached to a patient.</li>
+            </ul>
+        </prereq>
+        <context class="- topic/section task/context ">This procedure initializes the multi-modality console before a patient treatment session begins. You must complete this setup task whenever the device has been turned off.</context>
+        <steps class="- topic/ol task/steps ">
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Toggle the main power switch. </cmd>
+                <info class="- topic/itemgroup task/info ">
+                    Flip the rocker switch located on the
+                    <b class="+ topic/ph hi-d/b ">back panel</b>
+                    of the device to the
+                    <b class="+ topic/ph hi-d/b ">ON (I)</b>
+                    position.
+                    <image href="Images/powerswitch.png" class="- topic/image "/>
+                </info>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Verify screen display.</cmd>
+                <info class="- topic/itemgroup task/info ">
+                    Confirm that the digital screen displays the home menu.
+                    <note class="- topic/note ">If an error code displays, do not proceed.  </note>
+                </info>
+            </step>
+        </steps>
+        <result class="- topic/section task/result ">The digital display screen will illuminate, displaying the main clinical modality selection home menu.</result>
+    </taskbody>
+    <related-links class="- topic/related-links ">
+        <link href="index.dita" class="- topic/link "/>
+        <link href="estim_task_00.dita" class="- topic/link "/>
+    </related-links>
+</task>

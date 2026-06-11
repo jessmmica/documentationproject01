@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept-8685" xml:lang="en-us" class="- topic/topic concept/concept ">
+    <title class="- topic/title ">What is Combo?</title>
+    <shortdesc class="- topic/shortdesc ">An explanation of the physiological integration achieved by pairing therapeutic utlrasound with electrical stimulation, utilizing the transducer soundhead as an active electrode.</shortdesc>
+    <prolog class="- topic/prolog ">
+        <author translate="no" type="creator" class="- topic/author ">Jessica Chin &lt;jachin@ucdavis.edu&gt;</author>
+        <metadata class="- topic/metadata ">
+            <keywords class="- topic/keywords "/>
+        </metadata>
+    </prolog>
+    <conbody class="- topic/body  concept/conbody ">
+        <section class="- topic/section ">
+            <title class="- topic/title ">Clinical Context</title>
+            <p class="- topic/p ">Combination (Combo) therapy is a dual-modality clinical treatment that simultaneously applies high-frequency sound waves and electrical stimulation current to the same localized tissue. It merges the treatments to produce a coordinated effect that accelerates muscle relaxation, breaks down scar tissue, and provides pain relief. It is most effective in treating deep muscle spasms and trigger points, as the acoustic waves increase tissue permeability and raise deep-tissue temperature, lowering local nerve conduction resistance. This results in the accompanying electrical current being able to penetrate spasming muscle with greater efficiency. </p>
+        </section>
+        <section class="- topic/section ">
+            <title class="- topic/title ">How it works: Soundhead Circuit</title>
+            <p class="- topic/p ">In Combo therapy, the machine routes one side of the electrical current into the metal faceplate of the ultrasound transducer, passing the electrical current into the patient while emitting sound waves. The single adhesive pad placed on the patient's skin completes the electrical circuit and pulls the current back into the machine.</p>
+        </section>
+    </conbody>
+</concept>
