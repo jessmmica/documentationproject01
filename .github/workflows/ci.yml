@@ -62,7 +62,7 @@ jobs:
       #             --filter=.github/dita-ot/platform-linux.ditaval
       #
       - name: Build Markdown
-        uses: dita-ot/dita-ot-action@4.4
+        uses: document.ditamap
         with:
           transtype: markdown
           input: dita/document.ditamap
