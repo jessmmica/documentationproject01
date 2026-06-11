@@ -14,11 +14,7 @@
             </step>
             <step class="- topic/li task/step ">
                 <cmd class="- topic/ph task/cmd ">
-                    Plug the lead wires into the Channel 1 and Channel 2
-                    <?ezd-review-start 771715c7-7e48-421d-a187-09f4d5be49c7:comment:jippatel@ucdavis.edu:1779215199702?>
-                    <?ezd-review-end 771715c7-7e48-421d-a187-09f4d5be49c7?>
-                    .
-                </cmd>
+                    Plug the lead wires into the Channel 1 and Channel 2.</cmd>
                 <info class="- topic/itemgroup task/info ">
                     <note class="- topic/note ">For this example, Channel 1 and Channel 2 will be used. Any available channels can be used.</note>
                     <image href="Images/channel1andchannel2.png" class="- topic/image "/>
@@ -73,11 +69,7 @@
             </step>
             <step class="- topic/li task/step ">
                 <cmd class="- topic/ph task/cmd ">
-                    Slowly rotate the main intensity dial clockwise. I
-                    <?ezd-review-start e34db9bb-a2e8-4376-a9d6-66e7a1a0e77d:comment:jippatel@ucdavis.edu:1779215252112?>
-                    nstruc
-                    <?ezd-review-end e34db9bb-a2e8-4376-a9d6-66e7a1a0e77d?>
-                    t the patient to inform you when they feel a strong, comfortable "tingling."
+                    Slowly rotate the main intensity dial clockwise. Instruct the athlete to inform you when they feel a strong, comfortable "tingling."
                 </cmd>
             </step>
             <step class="- topic/li task/step ">
