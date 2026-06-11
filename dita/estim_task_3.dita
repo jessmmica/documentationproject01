@@ -25,11 +25,13 @@
             </step>
             <step class="- topic/li task/step ">
                 <cmd class="- topic/ph task/cmd ">
-                    <image href="Images/channel2final.png" class="- topic/image "/>
                     On the display home menu, select
                     <b class="+ topic/ph hi-d/b ">Combo</b>
                     .
                 </cmd>
+                <info class="- topic/itemgroup task/info ">
+                    <image href="Images/channel2final.png" class="- topic/image "/>
+                </info>
             </step>
             <step class="- topic/li task/step ">
                 <cmd class="- topic/ph task/cmd ">
