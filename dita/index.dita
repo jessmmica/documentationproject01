@@ -2,8 +2,23 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="topic-2323" xml:lang="en-us" class="- topic/topic ">
     <title class="- topic/title ">Introduction to E-stim</title>
-    <shortdesc class="- topic/shortdesc "/>
+    <shortdesc class="- topic/shortdesc ">
+        This is a beginner-friendly guide that explains how to administer electrical stimulation (e-stim) therapy using a multi-modality console. These instructions are designed for Sports Medicine Interns at UC Davis with little to no prior electrotherapy experience.
+    </shortdesc>
     <body class="- topic/body ">
+        <section class="- topic/section ">
+            <title class="- topic/title ">Purpose of This Guide</title>
+            <p class="- topic/p ">
+                This guide teaches beginner users how to administer electrotherapy treatments through a series of step-by-step topics. Users will learn how to initialize the console, place electrode pads, modify parameters, and set up therapeutic currents (IFC, Premod, Combo).
+            </p>
+        </section>
+        <section class="- topic/section ">
+            <title class="- topic/title ">Who This Guide is For</title>
+            <ul class="- topic/ul ">
+                <li class="- topic/li ">New interns with little or no clinical experience</li>
+                <li class="- topic/li ">Experienced interns who want a quick review of system interface basics</li>
+            </ul>
+        </section>
         <p class="- topic/p "/>
     </body>
 </topic>
