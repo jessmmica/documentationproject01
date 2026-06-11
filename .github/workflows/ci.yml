@@ -80,10 +80,12 @@ jobs:
       - name: Build HTML (Bootstrap)
         uses: dita-ot/dita-ot-action@4.4
         with:
-          transtype: bootstrap
+          plugins: net.infotexture.dita-bootstrap
+          transtype: html5-bootstrap
           input: dita/document.ditamap
           output-path: out/html
-          plugins: fox.jason.bootstrap
+
+      
       # ── Deploy HTML to GitHub Pages (gh-pages branch) ─────────────────────
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
