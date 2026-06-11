@@ -80,7 +80,7 @@ jobs:
       - name: Build HTML (Bootstrap)
         uses: dita-ot/dita-ot-action@4.4
         with:
-          plugins: https://github.com/dita-bootstrap/dita-bootstrap/archive/refs/heads/master.zip
+          plugins: https://github.com/jason-fox/fox.jason.extend.css/archive/master.zip https://github.com/dita-bootstrap/dita-bootstrap/archive/refs/heads/master.zip
           transtype: html5-bootstrap
           input: dita/document.ditamap
           output-path: out/html
