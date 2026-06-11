@@ -84,15 +84,8 @@ jobs:
           transtype: html5-bootstrap
           input: dita/document.ditamap
           output-path: out/html5
-      
-      # ── Deploy HTML to GitHub Pages (gh-pages branch) ─────────────────────
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: out/html5
-          publish_branch: gh-pages
-      #
+
+            #
       - name: Build Markdown
         uses: dita-ot/dita-ot-action@4.4
         with:
@@ -111,3 +104,12 @@ jobs:
         with:
           name: dita-markdown
           path: out/markdown
+
+      
+      # ── Deploy HTML to GitHub Pages (gh-pages branch) ─────────────────────
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: out/html5
+          publish_branch: gh-pages
