@@ -60,6 +60,21 @@ jobs:
       #             -f markdown \
       #             --filter=.github/dita-ot/audience-expert.ditaval \
       #             --filter=.github/dita-ot/platform-linux.ditaval
+
+       # ── Build PDF output ───────────────────────────────────────────────────
+      - name: Build PDF
+        uses: dita-ot/dita-ot-action@4.4
+        with:
+          transtype: pdf
+          input: dita/document.ditamap
+          output-path: out/pdf
+
+      # ── Upload PDF artifact ────────────────────────────────────────────────
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: dita-pdf
+          path: out/pdf
       #
       - name: Build Markdown
         uses: dita-ot/dita-ot-action@4.4
