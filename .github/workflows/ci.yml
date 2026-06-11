@@ -83,14 +83,14 @@ jobs:
           plugins: https://github.com/jason-fox/fox.jason.extend.css/archive/master.zip https://github.com/dita-bootstrap/dita-bootstrap/archive/refs/heads/master.zip
           transtype: html5-bootstrap
           input: dita/document.ditamap
-          output-path: out/html
+          output-path: out/html5
       
       # ── Deploy HTML to GitHub Pages (gh-pages branch) ─────────────────────
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: out/html
+          publish_dir: out/html5
           publish_branch: gh-pages
       #
       - name: Build Markdown
