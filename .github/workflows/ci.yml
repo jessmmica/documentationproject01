@@ -75,6 +75,23 @@ jobs:
         with:
           name: dita-pdf
           path: out/pdf
+
+       # ── Build Bootstrap HTML ───────────────────────────────────────────────
+      - name: Build HTML (Bootstrap)
+        uses: dita-ot/dita-ot-action@4.4
+        with:
+          transtype: html5
+          input: dita/document.ditamap
+          output-path: out/html
+          install: fox.jason.bootstrap
+
+      # ── Deploy HTML to GitHub Pages (gh-pages branch) ─────────────────────
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: out/html
+          publish_branch: gh-pages
       #
       - name: Build Markdown
         uses: dita-ot/dita-ot-action@4.4
