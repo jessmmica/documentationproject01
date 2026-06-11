@@ -80,7 +80,7 @@ jobs:
       - name: Build HTML (Bootstrap)
         uses: dita-ot/dita-ot-action@4.4
         with:
-          plugins: net.infotexture.dita-bootstrap
+          plugins: net.infotexture.dita-bootstrap@5.3.2
           transtype: html5-bootstrap
           input: dita/document.ditamap
           output-path: out/html
