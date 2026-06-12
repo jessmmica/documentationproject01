@@ -84,6 +84,12 @@ jobs:
           transtype: html5-bootstrap
           input: dita/document.ditamap
           output-path: out/html5
+          properties: >-
+            args.hdr=.github/dita-ot/header.xml
+            args.ftr=.github/dita-ot/footer.xml
+            args.css=theme.css
+            args.cssroot=.github/dita-ot
+            args.copycss=yes
 
             #
       - name: Build Markdown
