@@ -38,13 +38,13 @@ jobs:
           plugins: https://github.com/jason-fox/fox.jason.extend.css/archive/master.zip https://github.com/dita-bootstrap/dita-bootstrap/archive/refs/heads/master.zip
           build: |
             dita \
-              --input=dita/document.ditamap \
+              --input=/github/workspace/dita/document.ditamap \
               --format=html5-bootstrap \
-              --output=out/html5 \
-              --args.hdr=.github/dita-ot/header.xml \
-              --args.ftr=.github/dita-ot/footer.xml \
+              --output=/github/workspace/out/html5 \
+              --args.hdr=/github/workspace/.github/dita-ot/header.xml \
+              --args.ftr=/github/workspace/.github/dita-ot/footer.xml \
               --args.css=theme.css \
-              --args.cssroot=.github/dita-ot \
+              --args.cssroot=/github/workspace/.github/dita-ot \
               --args.copycss=yes
 
       - name: Deploy to GitHub Pages
