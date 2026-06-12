@@ -36,15 +36,16 @@ jobs:
         uses: dita-ot/dita-ot-action@4.4
         with:
           plugins: https://github.com/jason-fox/fox.jason.extend.css/archive/master.zip https://github.com/dita-bootstrap/dita-bootstrap/archive/refs/heads/master.zip
-          transtype: html5-bootstrap
-          input: dita/document.ditamap
-          output-path: out/html5
-          properties: |
-            args.hdr=.github/dita-ot/header.xml
-            args.ftr=.github/dita-ot/footer.xml
-            args.css=theme.css
-            args.cssroot=.github/dita-ot
-            args.copycss=yes
+          build: |
+            dita \
+              --input=dita/document.ditamap \
+              --format=html5-bootstrap \
+              --output=out/html5 \
+              --args.hdr=.github/dita-ot/header.xml \
+              --args.ftr=.github/dita-ot/footer.xml \
+              --args.css=theme.css \
+              --args.cssroot=.github/dita-ot \
+              --args.copycss=yes
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
