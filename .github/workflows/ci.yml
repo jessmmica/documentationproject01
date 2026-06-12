@@ -1,7 +1,4 @@
 name: CI
-
-# Triggers: runs on every push to master and can also be started manually
-# from the Actions tab (workflow_dispatch).
 on:
   push:
     branches:
@@ -9,59 +6,19 @@ on:
   workflow_dispatch:
 
 env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true" 
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+
+permissions:
+  contents: write
 
 jobs:
   build-dita:
     name: Build DITA
     runs-on: ubuntu-latest
-
     steps:
-      # ── 1. Check out the repository ────────────────────────────────────────
       - name: Git checkout
         uses: actions/checkout@v4
 
-      # ── 2. Build Markdown output ───────────────────────────────────────────
-      #
-      # The `org.lwdita` plugin converts DITA content to Markdown.
-      #
-      # CHUNKING (chunk="to-content")
-      # By default DITA-OT produces one Markdown file per DITA topic.
-      # To merge nested child topics into their parent topic file, add the
-      # DITA `chunk` attribute directly in your map:
-      #
-      #   <map chunk="combine">   ← merges the entire map into ONE .md file
-      #
-      # or on individual topicrefs to merge only that branch:
-      #
-      #   <topicref href="parent.dita" chunk="combine">
-      #     <topicref href="child.dita"/>
-      #   </topicref>
-      #
-      # See https://www.dita-ot.org/dev/topics/chunking for full details.
-      #
-      # DITAVAL FILTERING
-      # To include/exclude content using a DITAVal filter file:
-      #   1. Place your .ditaval file anywhere in the repo
-      #      (suggested: .github/dita-ot/myfilter.ditaval).
-      #      A sample template is already at that path — edit it to suit
-      #      your profiling attributes.
-      #   2. Add the --filter flag to the dita command below, e.g.:
-      #
-      #        dita -i dita/document.ditamap \
-      #             -o out/markdown \
-      #             -f markdown \
-      #             --filter=.github/dita-ot/myfilter.ditaval
-      #
-      #   3. To apply multiple DITAVal files at once, repeat --filter:
-      #
-      #        dita -i dita/document.ditamap \
-      #             -o out/markdown \
-      #             -f markdown \
-      #             --filter=.github/dita-ot/audience-expert.ditaval \
-      #             --filter=.github/dita-ot/platform-linux.ditaval
-
-       # ── Build PDF output ───────────────────────────────────────────────────
       - name: Build PDF
         uses: dita-ot/dita-ot-action@4.4
         with:
@@ -69,14 +26,12 @@ jobs:
           input: dita/document.ditamap
           output-path: out/pdf
 
-      # ── Upload PDF artifact ────────────────────────────────────────────────
       - name: Upload PDF artifact
         uses: actions/upload-artifact@v4
         with:
           name: dita-pdf
           path: out/pdf
 
-       # ── Build Bootstrap HTML ───────────────────────────────────────────────
       - name: Build HTML (Bootstrap)
         uses: dita-ot/dita-ot-action@4.4
         with:
@@ -91,31 +46,22 @@ jobs:
             args.cssroot=.github/dita-ot
             args.copycss=yes
 
-            #
-      - name: Build Markdown
-        uses: dita-ot/dita-ot-action@4.4
-        with:
-          transtype: markdown
-          input: dita/document.ditamap
-          output-path: out/markdown
-      
-
-      # ── 3. Upload the Markdown files as a downloadable workflow artifact ───
-      #
-      # After the workflow runs, open the Actions tab, select the run, and
-      # download the "dita-markdown" artifact from the Artifacts section.
-      #
-      - name: Upload Markdown artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: dita-markdown
-          path: out/markdown
-
-      
-      # ── Deploy HTML to GitHub Pages (gh-pages branch) ─────────────────────
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: out/html5/html5-bootstrap
           publish_branch: gh-pages
+
+      - name: Build Markdown
+        uses: dita-ot/dita-ot-action@4.4
+        with:
+          transtype: markdown
+          input: dita/document.ditamap
+          output-path: out/markdown
+
+      - name: Upload Markdown artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: dita-markdown
+          path: out/markdown
