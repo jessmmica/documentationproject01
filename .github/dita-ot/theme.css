@@ -1,0 +1,193 @@
+/* ── UC Davis Brand Colors ─────────────────────────────────────────────── */
+:root {
+  --ucd-navy: #002855;
+  --ucd-gold: #DAAA00;
+  --ucd-gold-light: #F5E6A3;
+  --ucd-navy-light: #1a3a5c;
+  --ucd-gray: #f5f5f5;
+  --ucd-text: #1a1a1a;
+}
+
+/* ── Navigation / Header ───────────────────────────────────────────────── */
+.navbar,
+header,
+.navbar-default {
+  background-color: var(--ucd-navy) !important;
+  border-bottom: 3px solid var(--ucd-gold);
+  padding: 0.75rem 1.5rem;
+}
+
+.navbar a,
+.navbar-brand,
+header a {
+  color: #ffffff !important;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.navbar a:hover {
+  color: var(--ucd-gold) !important;
+  text-decoration: none;
+}
+
+/* ── Sidebar / TOC ─────────────────────────────────────────────────────── */
+.bs-docs-sidebar,
+nav.bs-docs-sidebar,
+.toc-sidebar {
+  border-right: 1px solid #e0e0e0;
+  padding-right: 1rem;
+}
+
+.bs-docs-sidebar .nav > li > a,
+.toc-sidebar a {
+  color: var(--ucd-navy);
+  padding: 0.3rem 0.5rem;
+  font-size: 0.9rem;
+}
+
+.bs-docs-sidebar .nav > li > a:hover,
+.toc-sidebar a:hover {
+  color: var(--ucd-gold);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.bs-docs-sidebar .nav > .active > a {
+  color: var(--ucd-navy);
+  font-weight: 600;
+  border-left: 3px solid var(--ucd-gold);
+  padding-left: calc(0.5rem - 3px);
+}
+
+/* ── Page Body ─────────────────────────────────────────────────────────── */
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: var(--ucd-text);
+  background-color: #ffffff;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.container,
+.container-fluid {
+  max-width: 1100px;
+}
+
+/* ── Headings ──────────────────────────────────────────────────────────── */
+h1, h2, h3, h4, h5, h6,
+.title {
+  color: var(--ucd-navy);
+  font-weight: 600;
+}
+
+h1 { font-size: 1.9rem; border-bottom: 2px solid var(--ucd-gold); padding-bottom: 0.4rem; margin-bottom: 1rem; }
+h2 { font-size: 1.5rem; margin-top: 1.8rem; }
+h3 { font-size: 1.2rem; margin-top: 1.4rem; }
+
+/* ── Links ─────────────────────────────────────────────────────────────── */
+a {
+  color: var(--ucd-navy);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--ucd-gold);
+  text-decoration: underline;
+}
+
+/* ── Tables ────────────────────────────────────────────────────────────── */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+thead tr {
+  background-color: var(--ucd-navy);
+  color: #ffffff;
+}
+
+thead th {
+  padding: 0.6rem 0.9rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--ucd-gray);
+}
+
+tbody td {
+  padding: 0.5rem 0.9rem;
+  border-bottom: 1px solid #ddd;
+}
+
+/* ── Notes / Callouts ──────────────────────────────────────────────────── */
+.note, .tip, .warning, .caution, .danger {
+  border-left: 4px solid var(--ucd-gold);
+  background-color: #fffdf0;
+  padding: 0.75rem 1rem;
+  margin: 1.25rem 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.warning, .caution {
+  border-left-color: #c0392b;
+  background-color: #fff5f5;
+}
+
+/* ── Code ──────────────────────────────────────────────────────────────── */
+code, pre {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 0.88rem;
+  background-color: var(--ucd-gray);
+  border-radius: 3px;
+}
+
+code {
+  padding: 0.15em 0.4em;
+  color: var(--ucd-navy);
+}
+
+pre {
+  padding: 1rem;
+  border-left: 3px solid var(--ucd-gold);
+  overflow-x: auto;
+}
+
+/* ── Footer ────────────────────────────────────────────────────────────── */
+footer,
+.footer {
+  background-color: var(--ucd-navy);
+  color: #cccccc;
+  font-size: 0.85rem;
+  padding: 1rem 1.5rem;
+  border-top: 3px solid var(--ucd-gold);
+  margin-top: 3rem;
+}
+
+footer a {
+  color: var(--ucd-gold-light);
+}
+
+/* ── Step numbers (task topics) ────────────────────────────────────────── */
+ol.steps > li::marker {
+  color: var(--ucd-navy);
+  font-weight: 700;
+}
+
+/* ── Breadcrumb ────────────────────────────────────────────────────────── */
+.breadcrumb {
+  background-color: transparent;
+  padding: 0.5rem 0;
+  font-size: 0.85rem;
+}
+
+.breadcrumb-item a {
+  color: var(--ucd-navy);
+}
+
+.breadcrumb-item.active {
+  color: #666;
+}
