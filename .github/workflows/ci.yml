@@ -111,5 +111,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: out/html5
+          publish_dir: out/html5/html5-bootstrap
           publish_branch: gh-pages
